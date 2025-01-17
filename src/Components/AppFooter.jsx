@@ -1,4 +1,4 @@
-export default function footer() {
+export default function AppFooter() {
 
      const footerNavs = [
           {

@@ -1,4 +1,4 @@
-export default function CardRightSide(){
+export default function AppCardRightSide(){
 
 
      const members = [
