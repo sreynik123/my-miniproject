@@ -53,7 +53,7 @@ const AvatarMenue = () => {
     )
 }
 
-export default function MyAppNavbar() {
+export default function AppNavbar2() {
     const count = useSelector((state) => state.counter.value)
 
     const [state, setState] = useState(false)
