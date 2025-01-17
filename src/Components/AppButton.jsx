@@ -1,4 +1,4 @@
-export function ButtonIcon({onClick,icon}) {
+export function AppButton({onClick,icon}) {
     return (
         <button
             onClick={onClick}

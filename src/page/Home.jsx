@@ -1,9 +1,9 @@
 import { FaMinus, FaPlus } from "react-icons/fa";
-import { ButtonIcon } from "../components/AppButton";
 import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment } from "../features/counter/counterSlice";
 import { useEffect } from "react";
 import { fetchMovie } from "../features/movie/movieAction";
+import AppButton from "../components/AppButton"
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -25,8 +25,8 @@ export default function Home() {
   return (
     <main>
       <div className=" px-4 py-2  grid grid-cols-2 gap-2 p-4 bg-white ">
-        <ButtonIcon onClick={onIncreasement} icon={<FaPlus />} />
-        <ButtonIcon onClick={onDecresement} icon={<FaMinus />} />
+        <AppButton onClick={onIncreasement} icon={<FaPlus />} />
+        <AppButton onClick={onDecresement} icon={<FaMinus />} />
       </div>
       <hr />
       <ul className=" bg-white p-5   grid gap-x-8 gap-y-10 mt-16 sm:grid-cols-2 lg:grid-cols-3 shadow-2xl">
